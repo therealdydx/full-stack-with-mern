@@ -72,3 +72,92 @@ Common Inputs / Designs:
 - Alerts
 - Progress Bars
 
+## Bootstrap and JavaScript
+
+- Bootstrap JavaScript support is through JS Plugins
+  - Plugins written based on jQuery
+  - Plugins can be individually included
+  - Bootstrap JS Components -> jQuery -> JavaScript
+- JS Components can all be used without writing a single line of JavaScript
+  - data-* attributes (e.g. data-toggle, data-spy)
+  - Straightforward approach to use plugins
+  - We will explore this approach in this module
+
+### Advanced Navigation
+
+- Tabs, Pills and Tabbed Navigation
+- Navigation elements for navigating content within a page that is organized into multiple panes
+- Accordion Navigation
+
+### Tooltips, Popovers and Modals
+
+- Revealing content upon interacting with an element on the web page
+- Information is displayed as an overlay
+- Order of flexibility:
+  - Tooltip -> Popover -> Modal
+
+## Bootstrap and JQuery
+
+### JQuery
+
+- HTML/DOM manipulation
+- CSS manipulation
+- HTML Event methods
+- Effects and animations
+- AJAX
+
+### JQuery Syntax
+
+- $(selector).action()
+
+  - $
+
+    define/access JQuery
+
+  - (selector)
+
+    to query and find HTML elements
+
+  - action()
+
+    action to be performed on the element
+
+  - e.g. $("p").hide()
+
+  - e.g. $("#mycarousel").carousel('pause')
+
+```html
+<script>
+$document.ready(function(){
+	$('[data-toggle = "tooltip"]').tooltip();
+})
+</script>
+```
+
+### JQuery Events
+
+- User's interactions on a web page causing DOM events:
+  - Mouse: click, dblclick, mouseenter, mouseleave
+  - Keyboard: keypress, keydown, keyup
+  - Form: submit, change, focus, blur
+  - Document, Window: load, resize, scroll, unload
+
+### Bootstrap Carousel
+
+- Data Attributes
+  - data-slide
+  - data-slide-to
+  - data-ride
+  - data-interval
+
+## Other Non-Bootstrap Content
+
+- CSS may be limiting when it comes to defining variables, nesting selectors, expressions, etc.
+- CSS Preprocessors can address this:
+  - Less
+  - Sass
+  - Scss
+  - Stylus
+- All are compiled intro traditional CSS syntax automatically before use in a web page
+- We will examine Less and Sass briefly
+- Bootstrap 4 uses Sass
